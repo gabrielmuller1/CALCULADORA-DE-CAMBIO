@@ -1,3 +1,7 @@
+import javax.swing.*;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Gabriel {
     public static void main(String[] args) {
 //    "Crie um script na linguagem de programação java que receba a moeda de origem e a moeda de destino de uma lista "
@@ -5,12 +9,13 @@ public class Gabriel {
 
         //valor equuivalente a um real
         Map<String, Double> moedaEmReais = new HashMap<>();
-        moedaEmReais.put("real", 1.0);
-        //um real em dollar
-        moedaEmReais.put("dollar", 0.19);
-        moedaEmReais.put("dolar", 0.19);
+        moedaEmReais.put("Real", 1.0);
+        //um real em dollar americano
+        moedaEmReais.put("Dolar Americano", 0.19);
         //um real em euro
-        moedaEmReais.put("euro", 0.16);
+        moedaEmReais.put("Euro", 0.16);
+        //um real em dollar canadense
+        moedaEmReais.put("Dolar Canadense", 0.23);
 
         String moedaOrigem = JOptionPane.showInputDialog("Digite a moeda de origem:");
         Double valorOrigem = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor a converter:"));
@@ -31,7 +36,7 @@ public class Gabriel {
 
 
 
-            System.out.println(moedaOrigem + " em " + moedaDestino + " é igual a: "+ valorConvertido);
+            System.out.println(valorOrigem  +  moedaOrigem + " em " + moedaDestino + " é igual a: "+ valorConvertido);
         }else{
             System.out.println("Erro ao tentar pegar valor da moeda, não cadastrada ou invalida");
         }
