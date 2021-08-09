@@ -4,8 +4,6 @@ import java.util.Map;
 
 public class Gabriel {
     public static void main(String[] args) {
-//    "Crie um script na linguagem de programação java que receba a moeda de origem e a moeda de destino de uma lista "
-//    "previamente cadastrada, além do valor a ser convertido e retorne o valor convertido com precisão de centavos"
 
         //valor equuivalente a um real
         Map<String, Double> moedaEmReais = new HashMap<>();
